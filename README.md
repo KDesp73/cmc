@@ -31,6 +31,10 @@ cmc --move e2e4
 
 Since `--fen` is not specified the starting chess position is being used
 
+## Help
+
+Try `cmc --help` or `man cmc`
+
 ## License
 
 [GNU](./LICENSE)
