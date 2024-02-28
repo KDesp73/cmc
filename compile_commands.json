@@ -1,6 +1,12 @@
 [
 {
   "directory": "/home/kdesp73/personal/repos/cpp/cmc/build",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library -std=gnu++14 -o CMakeFiles/cmc.dir/src/help.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/src/help.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/src/help.cpp",
+  "output": "CMakeFiles/cmc.dir/src/help.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build",
   "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library -std=gnu++14 -o CMakeFiles/cmc.dir/src/logging.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/src/logging.cpp",
   "file": "/home/kdesp73/personal/repos/cpp/cmc/src/logging.cpp",
   "output": "CMakeFiles/cmc.dir/src/logging.cpp.o"

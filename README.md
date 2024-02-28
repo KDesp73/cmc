@@ -1,23 +1,7 @@
-# CPP-Project-Template
+# cmc
 
-## Tree
+`C`hess `M`ove `C`hecker
 
-```
-.
-├── CMakeLists.txt
-├── .editorconfig
-├── .gitignore
-├── include
-│   └── header.h
-├── README.md
-├── scripts
-│   ├── build
-│   ├── build_and_run
-│   ├── clean
-│   ├── clean_and_build
-│   ├── remove_submodule
-│   └── run
-├── src
-│   └── main.cpp
-└── tests
-    └── test.cpp
+A cli tool to check whether a chess move is valid or not
+
+

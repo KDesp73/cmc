@@ -1,0 +1,29 @@
+.\" Manpage for cmc.
+.\" Contact despoinidisk@gmail.com to correct errors or typos.
+.TH man 8 "28 Feb 2024" "0.0.1" "cmc man page"
+
+.SH NAME
+
+cmc \- check whether a chess move is valid
+
+.SH SYNOPSIS
+
+cmc --fen=[FEN] --move=[MOVE]
+
+.SH DESCRIPTION
+
+cmc is a simple cli tool that uses the KDesp73/Chess-Library to determine whether a chess move is valid or not based on the current position
+
+.SH OPTIONS
+
+-f --fen			Specify the position for which to check the validity of the move. If the option is not used the initial chess position will be used instead
+
+-m --move			Specify the move to check
+
+-v --version		Prints the version of the executable
+
+-h --help			Prints the help message
+
+.SH AUTHOR
+
+Konstantinos Despoinidis (despoinidisk@gmail.com)

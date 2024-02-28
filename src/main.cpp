@@ -1,8 +1,7 @@
 #include <cstdlib>
-#include <iostream>
 #include <getopt.h>
 #include <string>
-#include "chess_lib.h"
+#include "help.h"
 #include "include/board.h"
 #include "include/board_utils.h"
 #include "include/movement.h"
@@ -10,7 +9,7 @@
 
 using namespace std;
 
-#define VERSION "0.0.1 (dev)"
+#define VERSION "0.0.1 (release)"
 
 
 Move string_to_move(string str){
@@ -129,6 +128,7 @@ int main(int argc, char **argv){
             printf("cmc v%s\n", VERSION);
             exit(0);
 		case 'h':
+			cout << Help::message << endl;
 			exit(0);
         default:
             printf("Usage: %s [serve|connect] -a [option] -p [option]\n", argv[0]);
