@@ -1,4 +1,5 @@
 #include <cstddef>
+#include <cstdio>
 #include <cstdlib>
 #include <cstring>
 #include <getopt.h>
@@ -110,7 +111,7 @@ int main(int argc, char **argv){
         switch (opt) {
         case 'f':
 			if(!Notation::isValidFEN(optarg)){
-				ERRO("Invalid FEN");
+				ERRO("Invalid FEN: '" + string(optarg) + "'");
 				exit(1);
 			}
 			board = new Board(string(optarg));
@@ -129,6 +130,8 @@ int main(int argc, char **argv){
             exit(1);
         }
     }
+
+	// DEBU(board->exportFEN());
 
 	if (move == NULL) {
 		ERRO("No move argument provided");
