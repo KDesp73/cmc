@@ -18,7 +18,7 @@ cmc is a simple cli tool that uses the KDesp73/Chess-Library to determine whethe
 
 -f --fen			Specify the position for which to check the validity of the move. If the option is not used the initial chess position will be used instead
 
--m --move			Specify the move to check
+-m --move			Specify the move to check. In case of a promotion just add Q, R, B or N in the end of the move (i.e. a7a8Q)
 
 -v --version		Prints the version of the executable
 
