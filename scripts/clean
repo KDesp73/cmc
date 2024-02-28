@@ -3,5 +3,6 @@
 echo "Cleaning project..."
 
 rm -rf build
+rm compile_commands.json
 
 echo "Done"

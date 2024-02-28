@@ -4,9 +4,11 @@ echo "Building project..."
 
 mkdir build
 cd build
-
 cmake ..
-
 make
+
+cd ..
+
+cp ./build/compile_commands.json .
 
 echo "Done"
