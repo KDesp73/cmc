@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(YourProjectName)
+project(cmc)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 14)
@@ -8,23 +8,23 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # Include directories
 include_directories(include)
 
-# Add your source files
-set(SOURCES
-    src/main.cpp
-)
+add_subdirectory(Chess-Library)
+include_directories(Chess-Library)
 
-# Add your header files
-set(HEADERS
-    include/header.h
-)
 
-set(TESTS
-    tests/test.cpp
-)
+set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
+file(GLOB SOURCES ${SRC_DIR}/*.cpp)
+
+set(TEST_DIR ${CMAKE_CURRENT_SOURCE_DIR}/test)
+file(GLOB TESTS ${SRC_DIR}/*.cpp)
+
+set(INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include)
+file(GLOB HEADERS ${INCLUDE_DIR}/*.h ${INCLUDE_DIR}/*.hpp)
 
 # Add an executable target
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS} ${TESTS})
 
+target_link_libraries(${PROJECT_NAME} ChessLibrary)
 
 # Add any additional libraries or dependencies
 # Example:

@@ -1,0 +1,98 @@
+[
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library -std=gnu++14 -o CMakeFiles/cmc.dir/src/main.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/src/main.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/src/main.cpp",
+  "output": "CMakeFiles/cmc.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build/Chess-Library",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/include -std=gnu++11 -o CMakeFiles/ChessLibrary.dir/src/Board/board_utils.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Board/board_utils.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Board/board_utils.cpp",
+  "output": "Chess-Library/CMakeFiles/ChessLibrary.dir/src/Board/board_utils.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build/Chess-Library",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/include -std=gnu++11 -o CMakeFiles/ChessLibrary.dir/src/Board/Board.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Board/Board.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Board/Board.cpp",
+  "output": "Chess-Library/CMakeFiles/ChessLibrary.dir/src/Board/Board.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build/Chess-Library",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/include -std=gnu++11 -o CMakeFiles/ChessLibrary.dir/src/Board/special_piece_moves.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Board/special_piece_moves.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Board/special_piece_moves.cpp",
+  "output": "Chess-Library/CMakeFiles/ChessLibrary.dir/src/Board/special_piece_moves.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build/Chess-Library",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/include -std=gnu++11 -o CMakeFiles/ChessLibrary.dir/src/Board/king_checks.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Board/king_checks.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Board/king_checks.cpp",
+  "output": "Chess-Library/CMakeFiles/ChessLibrary.dir/src/Board/king_checks.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build/Chess-Library",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/include -std=gnu++11 -o CMakeFiles/ChessLibrary.dir/src/Board/movement.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Board/movement.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Board/movement.cpp",
+  "output": "Chess-Library/CMakeFiles/ChessLibrary.dir/src/Board/movement.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build/Chess-Library",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/include -std=gnu++11 -o CMakeFiles/ChessLibrary.dir/src/Pieces/Bishop.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/Bishop.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/Bishop.cpp",
+  "output": "Chess-Library/CMakeFiles/ChessLibrary.dir/src/Pieces/Bishop.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build/Chess-Library",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/include -std=gnu++11 -o CMakeFiles/ChessLibrary.dir/src/Pieces/King.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/King.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/King.cpp",
+  "output": "Chess-Library/CMakeFiles/ChessLibrary.dir/src/Pieces/King.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build/Chess-Library",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/include -std=gnu++11 -o CMakeFiles/ChessLibrary.dir/src/Pieces/Knight.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/Knight.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/Knight.cpp",
+  "output": "Chess-Library/CMakeFiles/ChessLibrary.dir/src/Pieces/Knight.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build/Chess-Library",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/include -std=gnu++11 -o CMakeFiles/ChessLibrary.dir/src/Pieces/Pawn.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/Pawn.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/Pawn.cpp",
+  "output": "Chess-Library/CMakeFiles/ChessLibrary.dir/src/Pieces/Pawn.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build/Chess-Library",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/include -std=gnu++11 -o CMakeFiles/ChessLibrary.dir/src/Pieces/Piece.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/Piece.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/Piece.cpp",
+  "output": "Chess-Library/CMakeFiles/ChessLibrary.dir/src/Pieces/Piece.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build/Chess-Library",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/include -std=gnu++11 -o CMakeFiles/ChessLibrary.dir/src/Pieces/Pieces.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/Pieces.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/Pieces.cpp",
+  "output": "Chess-Library/CMakeFiles/ChessLibrary.dir/src/Pieces/Pieces.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build/Chess-Library",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/include -std=gnu++11 -o CMakeFiles/ChessLibrary.dir/src/Pieces/Queen.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/Queen.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/Queen.cpp",
+  "output": "Chess-Library/CMakeFiles/ChessLibrary.dir/src/Pieces/Queen.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build/Chess-Library",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/include -std=gnu++11 -o CMakeFiles/ChessLibrary.dir/src/Pieces/Rook.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/Rook.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Pieces/Rook.cpp",
+  "output": "Chess-Library/CMakeFiles/ChessLibrary.dir/src/Pieces/Rook.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build/Chess-Library",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/include -std=gnu++11 -o CMakeFiles/ChessLibrary.dir/src/Notation/fen.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Notation/fen.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Notation/fen.cpp",
+  "output": "Chess-Library/CMakeFiles/ChessLibrary.dir/src/Notation/fen.cpp.o"
+},
+{
+  "directory": "/home/kdesp73/personal/repos/cpp/cmc/build/Chess-Library",
+  "command": "/usr/bin/c++  -I/home/kdesp73/personal/repos/cpp/cmc/include -I/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/include -std=gnu++11 -o CMakeFiles/ChessLibrary.dir/src/Notation/pgn.cpp.o -c /home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Notation/pgn.cpp",
+  "file": "/home/kdesp73/personal/repos/cpp/cmc/Chess-Library/src/Notation/pgn.cpp",
+  "output": "Chess-Library/CMakeFiles/ChessLibrary.dir/src/Notation/pgn.cpp.o"
+}
+]

@@ -1,0 +1,3 @@
+[submodule "Chess-Library"]
+	path = Chess-Library
+	url = git@github.com:KDesp73/Chess-Library.git
