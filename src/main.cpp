@@ -1,10 +1,13 @@
+#include <cstddef>
 #include <cstdlib>
+#include <cstring>
 #include <getopt.h>
 #include <string>
 #include "help.h"
 #include "include/board.h"
 #include "include/board_utils.h"
 #include "include/movement.h"
+#include "include/notation.h"
 #include "logging.h"
 
 using namespace std;
@@ -12,7 +15,7 @@ using namespace std;
 #define VERSION "0.0.1 (release)"
 
 
-Move string_to_move(string str){
+Move* string_to_move(string str){
 	if(str.empty()){
 		ERRO("Empty move");
 		exit(1);
@@ -23,6 +26,7 @@ Move string_to_move(string str){
 		exit(1);
 	}
 
+	Move* move = (Move*) malloc(sizeof(Move));
 	if (str.length() == 4){
 		string from = str.substr(0, 2);
 		string to = str.substr(2, str.length());
@@ -37,59 +41,47 @@ Move string_to_move(string str){
 			exit(1);
 		}
 
-		Move move = {
-			.from = from,
-			.to = to,
-		};
+		move->from = from;
+		move->to = to;
 
 		return move;
 	}
 
 	if (str.length() == 5) {
-		std::vector<std::string> substrings;
-		string from;
-		string to;
-		string promotion;
+		string from = str.substr(0, 2);
+		string to = str.substr(2, 2);
+		string promotion = str.substr(4);
 
-		size_t i = 0;
-		while (i < str.length()) {
-			std::string temp;
-			if (std::isalpha(str[i])) {
-				temp += str[i++];
-				while (i < str.length() && !std::isalpha(str[i])) {
-					temp += str[i++];
-				}
-				substrings.push_back(temp);
-			} else {
-				++i;
-			}
+		if (!BoardUtils::isValidSquare(from)){
+			ERRO("Invalid square '" + from + "'");
+			exit(1);
 		}
 
-		from = substrings.at(0);
-		to = substrings.at(1);
-		promotion = substrings.at(2);
+		if (!BoardUtils::isValidSquare(to)){
+			ERRO("Invalid square '" + to + "'");
+			exit(1);
+		}
 
 		if (promotion.length() != 1){
 			ERRO("Expecting piece character. Try Q, R, B, N");
 			exit(1);
 		}
 
-		Move move;
-		move.from = from;
-		move.to = to;
+		move->from = from;
+		move->to = to;
 
 		switch (promotion[0]) {
 		case 'Q':
-			move.promotion = Piece::QUEEN;
+			move->promotion = Piece::QUEEN;
 			break;
 		case 'R':
-			move.promotion = Piece::ROOK;
+			move->promotion = Piece::ROOK;
 			break;
 		case 'B':
-			move.promotion = Piece::BISHOP;
+			move->promotion = Piece::BISHOP;
 			break;
 		case 'N':
-			move.promotion = Piece::KNIGHT;
+			move->promotion = Piece::KNIGHT;
 			break;
 		default:
 			ERRO("Expecting piece character. Try Q, R, B, N");
@@ -99,7 +91,7 @@ Move string_to_move(string str){
 		return move;
 	}
 
-	return Move{};
+	return NULL;
 }
 
 int main(int argc, char **argv){
@@ -112,16 +104,18 @@ int main(int argc, char **argv){
 	};
 
 	Board* board = new Board();
-	Move move;
+	Move* move = NULL;
     int opt;
     while ((opt = getopt_long(argc, argv, "f:m:vh", long_options, NULL)) != -1) {
         switch (opt) {
         case 'f':
-			printf("FEN: %s\n", optarg);
+			if(!Notation::isValidFEN(optarg)){
+				ERRO("Invalid FEN");
+				exit(1);
+			}
 			board = new Board(string(optarg));
             break;
         case 'm':
-			printf("Move: %s\n", optarg);
 			move = string_to_move(optarg);
             break;
         case 'v':
@@ -131,12 +125,17 @@ int main(int argc, char **argv){
 			cout << Help::message << endl;
 			exit(0);
         default:
-            printf("Usage: %s [serve|connect] -a [option] -p [option]\n", argv[0]);
+            printf("Usage: %s --move=e2e4 --fen=\"FEN STRING\"\n", argv[0]);
             exit(1);
         }
     }
 
-	printf("%d\n", Movement::canMove(move, board));
+	if (move == NULL) {
+		ERRO("No move argument provided");
+		exit(1);
+	}
+
+	printf("%d\n", Movement::canMove(*move, board));
 
 	free(board);
 	return 0;

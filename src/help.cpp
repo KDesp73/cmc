@@ -7,6 +7,8 @@ Usage:
 
 	(The fen option is optional. If a fen is not specified the starting chess position will be used)
 
+	In case of a promotion just add Q, R, B or N in the end of the move (i.e. a7a8Q)
+
 Options:
 	-f --fen			Specify the position for which to check the validity of the move. If the option is not used the initial chess position will be used instead
 

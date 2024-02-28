@@ -4,6 +4,10 @@ project(cmc)
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(BUILD_MODE Debug)
+set(CMAKE_CXX_FLAGS "-Wall")
+set(CMAKE_CXX_FLAGS_DEBUG "-g")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
 # Include directories
 include_directories(include)
