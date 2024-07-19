@@ -141,5 +141,5 @@ int main(int argc, char **argv){
 	int isValid = Movement::canMove(*move, board);
 	free(board);
 
-	return isValid;
+	return !isValid;
 }
