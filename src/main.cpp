@@ -138,8 +138,8 @@ int main(int argc, char **argv){
 		exit(1);
 	}
 
-	printf("%d\n", Movement::canMove(*move, board));
-
+	int isValid = Movement::canMove(*move, board);
 	free(board);
-	return 0;
+
+	return isValid;
 }
